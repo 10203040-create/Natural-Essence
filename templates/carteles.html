@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block title %}Carteles | Natural Essence{% endblock %}
+
+{% block content %}
+
+<section class="portada" style="min-height: 300px; grid-template-columns: 1fr;">
+    <div>
+        <span class="etiqueta">PUBLICIDAD DE NUESTRO PRODUCTO</span>
+        <h1>Nuestros carteles</h1>
+        <p>Diseños creados para dar a conocer Natural Essence y compartir información sobre nuestro producto.</p>
+    </div>
+</section>
+
+<section class="seccion">
+    <div class="titulo-seccion">
+        <span>DISEÑOS PUBLICITARIOS</span>
+        <h2>Carteles de Natural Essence</h2>
+        <p>Conoce nuestros dos carteles.</p>
+    </div>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Cartel de marketing</h3>
+            <img src="{{ url_for('static', filename='images/cartel-marketing.png') }}"
+                 alt="Cartel de marketing Natural Essence">
+        </div>
+
+        <div class="tarjeta">
+            <h3>Cartel informativo</h3>
+            <img src="{{ url_for('static', filename='images/cartel-informativo.png') }}"
+                 alt="Cartel informativo Natural Essence">
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

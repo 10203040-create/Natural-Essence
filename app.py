@@ -23,8 +23,9 @@ def producto():
 @app.route('/comparativa')
 def comparativa():
     return render_template('comparativa.html')
-
+@app.route('/carteles')
+def carteles():
+    return render_template('carteles.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
-app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

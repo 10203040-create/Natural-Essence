@@ -214,6 +214,20 @@ a {
     font-size: 23px;
     margin-bottom: 12px;
 }
+/* IMÁGENES DE PRODUCTO Y CARTELES */
+
+.tarjeta img {
+    width: 100%;
+    max-width: 230px;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto;
+}
+
+.tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .tarjeta p {
     color: #687267;
