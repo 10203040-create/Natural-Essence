@@ -1,0 +1,122 @@
+
+{% extends "base.html" %}
+
+{% block title %}Nuestro producto | Natural Essence{% endblock %}
+
+{% block content %}
+
+<section class="portada" style="min-height: 350px; grid-template-columns: 1fr;">
+    <div>
+        <span class="etiqueta">CONOCE NUESTRA PRESENTACIÓN</span>
+        <h1>Nuestro producto</h1>
+        <h2>Natural Essence</h2>
+        <p>
+            Conoce el diseño, la presentación y las características
+            del envase de nuestro limpiador líquido para pisos.
+        </p>
+    </div>
+</section>
+
+<section class="contenido">
+
+    <div class="producto-ficha">
+
+        <div>
+            <img src="{{ url_for('static', filename='images/producto.jpg') }}"
+                 alt="Fotografía del producto Natural Essence">
+        </div>
+
+        <div>
+            <span class="etiqueta">NATURAL ESSENCE</span>
+
+            <h1>Limpiador líquido para pisos</h1>
+
+            <p>
+                Es una propuesta escolar elaborada por estudiantes
+                del CECyTEJ 24 Ixtapa, utilizando limón, vinagre,
+                bicarbonato de sodio, agua y jabón líquido.
+            </p>
+
+            <h2>Características</h2>
+
+            <ul>
+                <li>Presentación líquida.</li>
+                <li>Elaboración por nuestro equipo.</li>
+                <li>Envase de plástico PET transparente.</li>
+                <li>Botella con atomizador y boquilla ajustable.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="titulo-seccion" style="margin-top: 80px;">
+        <span>INFORMACIÓN TÉCNICA</span>
+        <h2>Características del envase</h2>
+        <p>Datos registrados durante el desarrollo del proyecto.</p>
+    </div>
+
+    <div class="tabla-contenedor">
+        <table>
+            <tr>
+                <th>Característica</th>
+                <th>Dato</th>
+            </tr>
+
+            <tr>
+                <td>Material</td>
+                <td>Plástico PET transparente.</td>
+            </tr>
+
+            <tr>
+                <td>Altura aproximada</td>
+                <td>7 cm.</td>
+            </tr>
+
+            <tr>
+                <td>Diámetro de la base</td>
+                <td>7 cm.</td>
+            </tr>
+
+            <tr>
+                <td>Capacidad</td>
+                <td> 350ml (aproximadamente).</td>
+            </tr>
+
+            <tr>
+                 <td>Masa del envase con atomizador</td>
+                <td>40g (aproximadamente).</td>
+            </tr>
+            <tr>
+                <td>Tipo de tapa</td>
+                <td>Atomizador con boquilla ajustable.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="titulo-seccion" style="margin-top: 80px;">
+        <span>IDENTIDAD DE NUESTRA MARCA</span>
+        <h2>Logotipo y etiqueta</h2>
+        <p>Los diseños originales creados por nuestro equipo.</p>
+    </div>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Logotipo</h3>
+            <img src="{{ url_for('static', filename='images/logo-natural-essence.jpg') }}"
+                 alt="Logotipo Natural Essence"
+                 style="width: 100%; margin-top: 20px;">
+        </div>
+
+        <div class="tarjeta">
+            <h3>Diseño de etiqueta</h3>
+            <img src="{{ url_for('static', filename='images/etiqueta.png') }}"
+                 alt="Etiqueta original Natural Essence"
+                 style="width: 100%; margin-top: 20px;">
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

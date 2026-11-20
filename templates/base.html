@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Natural Essence{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="/" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span>NATURAL <strong>ESSENCE</strong></span>
+    </a>
+
+    <nav class="menu">
+        <a href="/">Inicio</a>
+        <a href="/investigacion">Investigación</a>
+        <a href="/elaboracion">Elaboración</a>
+        <a href="/producto">Producto</a>
+        <a href="/comparativa">Comparativa</a>
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    <div>
+        <h2>Natural Essence</h2>
+        <p>Limpieza para tu hogar, inspiración para cuidar nuestro entorno.</p>
+    </div>
+
+    <div class="footer-equipo">
+        <p>Proyecto escolar · CECyTEJ 24 Ixtapa</p>
+        <p>Ubicación: Laurel Real s/n, esq. Av. Verde Vallarta,
+Fracc. Verde Vallarta, Las Juntas, Puerto Vallarta, Jalisco.</p>
+
+<p>
+    <a href="https://www.google.com/maps/search/?api=1&query=CECyTEJ+24+Puerto+Vallarta+Ixtapa" target="_blank">
+        Ver ubicación en Google Maps
+    </a>
+</p>
+
+<p>
+    <a href="https://cecytejalisco.mx/ixtapa" target="_blank">
+        Página oficial del CECyTEJ
+    </a>
+
+    <p class="copyright">© 2026 Natural Essence</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/funciones.js') }}"></script>
+
+</body>
+</html>
